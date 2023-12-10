@@ -1,13 +1,20 @@
 #include "BinarySearchTree.h"
+#include "heap.h"
+
+using namespace std;
 
 int main()
 {
-	BST tree;
-	tree.insert(12);
-	tree.insert(1);
-	tree.insert(2);
-	tree.insert(9);
-	tree.deleteValue(9);
-	tree.inOrder();
-	std::cout << tree.GetRoot();
+	median med;
+
+	med.insert(1);
+	cout << med.get() << endl;
+	med.insert(5);
+	cout << med.get() << endl;
+	med.insert(40);
+	cout << med.get() << endl;
+
+
+
+
 }
