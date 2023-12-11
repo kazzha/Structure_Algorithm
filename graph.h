@@ -1,5 +1,9 @@
 #pragma once
 #include <iostream>
+#include <string>
+#include <set>
+#include <map>
+#include <queue>
 #include <vector>
 #include <algorithm>
 
@@ -84,3 +88,15 @@ public:
 	}
 };
 
+namespace BFS
+{
+	template <typename T>
+	struct Edge
+	{
+		unsigned src;
+		unsiged dst;
+		T weight;
+	};
+
+
+}

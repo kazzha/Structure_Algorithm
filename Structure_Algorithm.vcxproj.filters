@@ -29,5 +29,11 @@
     <ClInclude Include="heap.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
+    <ClInclude Include="graph.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="greedy algorithm.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
