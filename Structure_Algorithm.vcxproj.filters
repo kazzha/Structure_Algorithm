@@ -20,20 +20,23 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BinaryTree.h">
-      <Filter>소스 파일</Filter>
+    <ClInclude Include="크루스칼 Minimum Spanning Tree.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="BinarySearchTree.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="heap.h">
-      <Filter>소스 파일</Filter>
+    <ClInclude Include="BinaryTree.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="graph.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="greedy algorithm.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="heap.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
