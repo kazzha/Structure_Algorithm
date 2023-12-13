@@ -2,7 +2,7 @@
 #include "heap.h"
 #include "greedy algorithm.h"
 #include <list>
-#include "크루스칼 Minimum Spanning Tree.h"
+#include "BFS_DFS.h"
 
 using namespace std;
 
@@ -75,6 +75,7 @@ int main()
 	cout << MST;
 	
 	*/
+	/*
 	Graph<T> G(9);
 
 	map<unsigned, vector<pair<unsigned, T>>> edge_map;
@@ -97,5 +98,18 @@ int main()
 	auto colors = greedy_coloring<T>(G);
 	cout << "[그래프 컬러링]" << endl;
 	print_colors(colors);
+	*/
+	using namespace BFS;
+
+	// 그래프 객체 생성
+	auto G = creat_reference_graph<T>();
+	cout << "[입력 그래프]" << endl;
+	cout << G << endl;
+
+	// 1번 정점부터 BFS 실행 & 방문 순서 출력
+	cout << "[BFS 방문 순서]" << endl;
+	auto bfs_visit_order = breadth_first_search(G, 1);
+	for (auto v : bfs_visit_order)
+		cout << v << endl;
 
 }

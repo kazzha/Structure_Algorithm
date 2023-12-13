@@ -38,5 +38,8 @@
     <ClInclude Include="heap.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="BFS_DFS.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
