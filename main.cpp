@@ -99,7 +99,9 @@ int main()
 	cout << "[그래프 컬러링]" << endl;
 	print_colors(colors);
 	*/
-	using namespace BFS;
+
+	
+	using namespace Search;
 
 	// 그래프 객체 생성
 	auto G = creat_reference_graph<T>();
@@ -111,5 +113,7 @@ int main()
 	auto bfs_visit_order = breadth_first_search(G, 1);
 	for (auto v : bfs_visit_order)
 		cout << v << endl;
+	
+
 
 }
