@@ -3,6 +3,8 @@
 #include "greedy algorithm.h"
 #include <list>
 #include "BFS_DFS.h"
+#include "binary_search.h"
+#include "DC_sort.h"
 
 using namespace std;
 
@@ -100,7 +102,7 @@ int main()
 	print_colors(colors);
 	*/
 
-	
+	/*
 	using namespace Search;
 
 	// 그래프 객체 생성
@@ -114,6 +116,14 @@ int main()
 	for (auto v : bfs_visit_order)
 		cout << v << endl;
 	
+	*/
+	
+	vector<int> Merge{ 5, 1, 2, 3, 4, 9 };
+	vector<int> Qick{ 5,1,3,7,9 };
+	
+	auto Merge_end = merge_sort<int>(Merge);
+	quick_sort<int>(Qick.begin(), Qick.end()-1);
 
+	cout << "6번째 원소: " << *linear_time_select<int>(Merge.begin(), Merge.end()-1, 2);
 
 }
